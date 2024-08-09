@@ -7,6 +7,8 @@ const toggleNav = () => {
 };
 mobileNav.addEventListener("click", () => toggleNav());
 
+document.getElementById('year').textContent = new Date().getFullYear();
+
 document.addEventListener('DOMContentLoaded', () => {
     const carousel = document.querySelector('.card__content');
     const leftButton = document.querySelector('.carousel__button--left');

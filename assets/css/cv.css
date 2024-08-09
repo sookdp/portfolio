@@ -693,6 +693,10 @@ main.row {
     background-color: #936c57;
 }
 
+#year{
+    color: #fff;
+}
+
 /* ######################################### MEDIA QUERIES ######################################### */
 @media screen and (max-width: 790px) {
     .hamburger {
