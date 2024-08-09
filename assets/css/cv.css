@@ -3,8 +3,6 @@
 /* ######################################### NAVBAR ######################################### */
 * {
     box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -15,6 +13,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
 }
 
 nav {
@@ -143,6 +142,7 @@ nav ul li a:hover {
 /* ######################################### A PROPOS DE MOI ######################################### */
 
 .presentation {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,7 +183,6 @@ span {
     flex-direction: column;
     min-width: 35%;
     max-width: 98%;
-    padding: 5vh;
 }
 
 .text p {
@@ -276,6 +275,7 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .container {
@@ -307,12 +307,12 @@ main.row {
 
 .col .title {
     color: #5d341f;
-    padding: 0px 0px 20px 0;
+    padding: 0 0 20px 0;
     text-align: center;
 }
 
 .col .contents {
-    padding: 0px 30px;
+    padding: 0 10px;
     border-left: 2px solid #b99f92;
 }
 
@@ -323,13 +323,13 @@ main.row {
     transition: all 0.4s;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
     width: 100%;
     box-sizing: border-box;
 }
 
 .col .contents .box:hover {
-    box-shadow: 0px 3px 12px 0px #cbcbcb;
+    box-shadow: 0 3px 12px 0 #cbcbcb;
 }
 
 .col .contents .box::before {
@@ -339,7 +339,7 @@ main.row {
     height: 16px;
     border-radius: 50%;
     top: 0;
-    right: calc(100% + 22px);
+    right: calc(100% + 2px);
     background-color: #5d341f;
     border: 2px solid #e2d2ca;
 }
